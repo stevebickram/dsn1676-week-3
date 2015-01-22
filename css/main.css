@@ -39,8 +39,8 @@ html {
     background-color: black;
     height: 100vh;
     overflow: hidden;
-    -webkit-animation: scale 1s linear infinite alternate;
-    animation: scale 1s linear infinite alternate;
+    -webkit-animation: scale 30s linear infinite alternate;
+    animation: scale 30s linear infinite alternate;
 }
 @-webkit-keyframes scale {
     
@@ -49,8 +49,8 @@ html {
     transform: scale(1,1);
 }
 100% {
-    -webkit-transform: scale(1.05,1.05);
-    transform: scale(1.05,1.05);
+    -webkit-transform: scale(1.02,1.2);
+    transform: scale(1.02,1.02);
 }}
 @keyframes scale {
     
@@ -66,86 +66,55 @@ html {
 .blaster {
     position: absolute;
     left: 40em;
-    top:30em;
+    top:10em;
     -webkit-animation: bounce 10s infinite alternate;
     animation: bounce 10s infinite alternate;
 }
 @-webkit-keyframes bounce {
  0% {
-     -webkit-transform: translateY(40px);
-     -webkit-transform: translateX(30px);
-     transform: translateY(40px);
-     transform: translateX(30px);
+     -webkit-transform: translate(5px, 5px);
+     transform: translate(5px, 5px);
 }
 50% {
-    -webkit-transform: translateY(60px);
-    -webkit-tranform: translateX(300px);
-    transform: translateY(60px);
-    tranform: translateX(300px);
+    -webkit-transform: translate(20px, 30px);
+    transform: translate(20px, 30px);
 }
 65% {
-    -webkit-transform: translateY(200px);
-    -webkit-tranform: translateX(400px);
-    transform: translateY(200px);
-    tranform: translateX(400px);
+    -webkit-transform: translate(10px, 20px);
+    transform: translat(10px, 20px);
 }
 75% { 
-    -webkit-transform: translateY(300px);
-    -webkit-transfrom: translateX(100px);
-    transform: translateY(300px);
-    transfrom: translateX(100px);
-}
-85.24% {
-    -webkit-transform: translateY(200px);
-    -webkit-transfrom: translateX(150px);
-    transform: translateY(200px);
-    transfrom: translateX(150px);
-}
-93% {
-    -webkit-transfrom: translateY(250px);
-    -webkit-transfrom: translateX(250px);
-    transfrom: translateY(250px);
-    transfrom: translateX(250px);
-
+    -webkit-transform: translate(30px, 10px);
+    transform: translate(30px, 10px);
 }
 97%{
-    -webkit-transfrom: translateY(30px);
-    -webkit-transfrom: translateX(450px);
-    transfrom: translateY(30px);
-    transfrom: translateX(450px);
-
+    -webkit-transfrom: translate(50px, 50px);
+    transfrom: translate(50px, 50px);
 }
 100%{
-    -webkit-transfrom: translateY(200px);
-    -webkit-transfrom: translateX(250px);
-    transfrom: translateY(200px);
-    transfrom: translateX(250px);
+    -webkit-transfrom: translate(20px, 25px);
+    transfrom: translate(20px, 25px);
 }
 }
 @keyframes bounce {
  0% {
-     transform: translate(40px, 30px);
+     transform: translate(5px, 5px);
 }
 50% {
-    transform: translate(60px, 300px);
+    transform: translate(20px, 30px);
 }
 65% {
-    transform: translate(200px, 400px);
+    transform: translate(10px, 20px);
 }
 75% { 
-    transform: translate(300px, 100px);
+    transform: translate(30px, 10px);
 }
-85.24% {
-    transform: translate(200px, 150px);
-}
-93% {
-    transform: translate(250px, 250px);
-}
+
 97%{
-    transform: translate(30px, 450px);
+    transfrom: translate(50px, 50px);
 }
 100%{
-    transform: translate(200px, 250px);
+    transform: translate(20px, 25px);
 }
 }
 .asteroid {
@@ -174,7 +143,7 @@ html {
 .bullet {
     position: relative;
     top: -11.5em;
-    animation: blaster 3s linear forwards;
+    animation: blaster 2s linear infinite forwards;
 }
 @keyframes blaster {
 
@@ -188,10 +157,10 @@ html {
 }
 20% {
     opacity: 1;
-    transform: translate(250px, 200px);
+    transform: translate(-250px, 0px);
 }
     
 100%{
-    transform: translate(450px, 200px);
+    transform: translate(-450px, 0px);
 }
 }
